@@ -1,0 +1,907 @@
+/* ============================= */
+/* Dashboard Page */
+/* ============================= */
+
+.dashboard-page {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+
+  background: #071a2b;
+  color: #f8fafc;
+}
+
+
+/* ============================= */
+/* Sidebar */
+/* ============================= */
+
+.dashboard-sidebar {
+  width: 240px;
+  min-height: 100vh;
+
+  padding: 25px 18px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #0d2538;
+
+  border-right: 1px solid rgba(34, 211, 238, 0.12);
+}
+
+
+/* ============================= */
+/* Sidebar Logo */
+/* ============================= */
+
+.sidebar-logo {
+  padding: 5px 10px 30px;
+}
+
+.sidebar-logo h2 {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  color: #f8fafc;
+}
+
+.sidebar-logo span {
+  color: #22d3ee;
+}
+
+
+/* ============================= */
+/* Sidebar Menu */
+/* ============================= */
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.sidebar-menu a {
+  display: block;
+
+  padding: 12px 14px;
+
+  border-radius: 10px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.sidebar-menu a:hover {
+  color: #f8fafc;
+
+  background: rgba(20, 184, 166, 0.1);
+}
+
+.sidebar-menu a.active {
+  color: #071a2b;
+
+  background: linear-gradient(
+    135deg,
+    #14b8a6,
+    #22d3ee
+  );
+
+  box-shadow:
+    0 8px 20px rgba(20, 184, 166, 0.18);
+}
+
+
+/* ============================= */
+/* Sidebar Bottom */
+/* ============================= */
+
+.sidebar-bottom {
+  margin-top: auto;
+
+  width: 100%;
+
+  padding: 20px 10px 5px;
+
+  box-sizing: border-box;
+}
+
+.theme-toggle,
+.logout-btn {
+  display: block;
+
+  width: 100%;
+
+  min-height: 42px;
+
+  padding: 11px 14px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  box-sizing: border-box;
+
+  transition: all 0.25s ease;
+}
+
+
+/* Theme Button */
+
+.theme-toggle {
+  margin-bottom: 10px;
+
+  background: #0d2538;
+
+  color: #f8fafc;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.theme-toggle:hover {
+  background: #14b8a6;
+
+  color: #ffffff;
+}
+
+
+/* Logout Button */
+
+.logout-btn {
+  background: transparent;
+
+  color: #f87171;
+
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.logout-btn:hover {
+  background: rgba(248, 113, 113, 0.1);
+}
+
+
+/* ============================= */
+/* Dashboard Main */
+/* ============================= */
+
+.dashboard-main {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 30px 35px;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* Dashboard Header */
+/* ============================= */
+
+.dashboard-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 6px;
+
+  color: #f8fafc;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.dashboard-header p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+}
+
+
+/* ============================= */
+/* Profile Area */
+/* ============================= */
+
+.profile-area {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #e2e8f0;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* Profile Circle */
+
+.profile-circle {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #14b8a6,
+    #22d3ee
+  );
+
+  color: #071a2b;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  box-shadow:
+    0 6px 18px rgba(20, 184, 166, 0.2);
+}
+
+
+/* ============================= */
+/* Welcome Section */
+/* ============================= */
+
+.dashboard-welcome {
+  width: 100%;
+
+  padding: 24px 28px;
+
+  box-sizing: border-box;
+
+  margin-bottom: 25px;
+
+  border: 1px solid rgba(34, 211, 238, 0.1);
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(20, 184, 166, 0.12),
+      rgba(34, 211, 238, 0.06)
+    );
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-welcome h2 {
+  margin: 0 0 8px;
+
+  color: #f8fafc;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.dashboard-welcome p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* ============================= */
+/* Statistics Cards */
+/* ============================= */
+
+.dashboard-stats {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+  width: 100%;
+
+  /* Space between stat cards and graphs */
+  margin-bottom: 30px;
+}
+
+
+/* ============================= */
+/* Individual Stat Card */
+/* ============================= */
+
+.stat-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 22px;
+
+  box-sizing: border-box;
+
+  background: #0d2538;
+
+  border: 1px solid rgba(34, 211, 238, 0.1);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+/* Card Hover */
+
+.stat-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(34, 211, 238, 0.25);
+
+  box-shadow:
+    0 8px 25px rgba(20, 184, 166, 0.2);
+}
+
+
+/* ============================= */
+/* Stat Icons */
+/* ============================= */
+
+.stat-icon {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+
+  font-size: 24px;
+}
+
+
+/* Total Students */
+
+.students-icon {
+  background: rgba(34, 211, 238, 0.12);
+
+  color: #22d3ee;
+}
+
+
+/* Present */
+
+.present-icon {
+  background: rgba(34, 197, 94, 0.12);
+
+  color: #4ade80;
+}
+
+
+/* Absent */
+
+.absent-icon {
+  background: rgba(239, 68, 68, 0.12);
+
+  color: #f87171;
+}
+
+
+/* Average Attendance */
+
+.attendance-icon {
+  background: rgba(20, 184, 166, 0.12);
+
+  color: #14b8a6;
+}
+
+
+/* ============================= */
+/* Stat Content */
+/* ============================= */
+
+.stat-content h3 {
+  margin: 0 0 6px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.stat-content p {
+  margin: 0;
+
+  color: #f8fafc;
+
+  font-size: 24px;
+
+  font-weight: 700;
+}
+
+
+/* ============================= */
+/* Dashboard Charts */
+/* ============================= */
+
+.dashboard-charts {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+
+  width: 100%;
+
+  /* Space is already provided by dashboard-stats */
+  margin-top: 0;
+}
+
+
+/* ============================= */
+/* Chart Card */
+/* ============================= */
+
+.chart-card {
+  min-width: 0;
+
+  padding: 22px;
+
+  box-sizing: border-box;
+
+  background: #0d2538;
+
+  border: 1px solid rgba(34, 211, 238, 0.1);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ============================= */
+/* Chart Header */
+/* ============================= */
+
+.chart-header {
+  margin-bottom: 15px;
+}
+
+.chart-header h3 {
+  margin: 0 0 5px;
+
+  color: #f8fafc;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.chart-header p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+}
+
+
+/* ============================= */
+/* Chart Container */
+/* ============================= */
+
+.chart-container {
+  width: 100%;
+
+  height: 300px;
+}
+
+
+/* ============================= */
+/* LIGHT THEME */
+/* ============================= */
+
+body.light .dashboard-page {
+  background: #f1f5f9;
+
+  color: #0f172a;
+}
+
+
+/* Sidebar */
+
+body.light .dashboard-sidebar {
+  background: #ffffff;
+
+  border-right: 1px solid #e2e8f0;
+}
+
+body.light .sidebar-logo h2 {
+  color: #0f172a;
+}
+
+body.light .sidebar-menu a {
+  color: #475569;
+}
+
+body.light .sidebar-menu a:hover {
+  color: #0f172a;
+
+  background: rgba(20, 184, 166, 0.1);
+}
+
+
+/* Main */
+
+body.light .dashboard-main {
+  background: #f1f5f9;
+}
+
+
+/* Header */
+
+body.light .dashboard-header h1 {
+  color: #0f172a;
+}
+
+body.light .dashboard-header p {
+  color: #64748b;
+}
+
+
+/* Profile */
+
+body.light .profile-area {
+  color: #334155;
+}
+
+
+/* Welcome */
+
+body.light .dashboard-welcome {
+  background: #ffffff;
+
+  border-color: #e2e8f0;
+
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+body.light .dashboard-welcome h2 {
+  color: #0f172a;
+}
+
+body.light .dashboard-welcome p {
+  color: #64748b;
+}
+
+
+/* Statistics */
+
+body.light .stat-card {
+  background: #ffffff;
+
+  border-color: #e2e8f0;
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+body.light .stat-content h3 {
+  color: #64748b;
+}
+
+body.light .stat-content p {
+  color: #0f172a;
+}
+
+
+/* Charts */
+
+body.light .chart-card {
+  background: #ffffff;
+
+  border-color: #e2e8f0;
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+body.light .chart-header h3 {
+  color: #0f172a;
+}
+
+body.light .chart-header p {
+  color: #64748b;
+}
+
+
+/* Theme Button */
+
+body.light .theme-toggle {
+  background: #f1f5f9;
+
+  color: #0f172a;
+
+  border-color: #cbd5e1;
+}
+
+body.light .theme-toggle:hover {
+  background: #14b8a6;
+
+  color: #ffffff;
+}
+
+
+/* Logout */
+
+body.light .logout-btn {
+  background: transparent;
+
+  color: #dc2626;
+
+  border-color: rgba(239, 68, 68, 0.25);
+}
+
+body.light .logout-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+
+/* ============================= */
+/* Tablet */
+/* ============================= */
+
+@media (max-width: 1000px) {
+
+  .dashboard-sidebar {
+    width: 210px;
+  }
+
+  .dashboard-main {
+    padding: 25px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 30px;
+  }
+
+}
+
+
+/* ============================= */
+/* Tablet / Smaller Laptop */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .dashboard-charts {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+}
+
+
+/* ============================= */
+/* Mobile */
+/* ============================= */
+
+@media (max-width: 700px) {
+
+  .dashboard-page {
+    flex-direction: column;
+  }
+
+
+  /* Sidebar */
+
+  .dashboard-sidebar {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 15px;
+
+    border-right: none;
+
+    border-bottom:
+      1px solid rgba(34, 211, 238, 0.12);
+  }
+
+
+  .sidebar-logo {
+    padding: 5px 10px 15px;
+
+    text-align: center;
+  }
+
+
+  .sidebar-menu {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 8px;
+  }
+
+
+  .sidebar-menu a {
+    text-align: center;
+
+    padding: 10px;
+  }
+
+
+  .sidebar-bottom {
+    margin-top: 12px;
+
+    padding: 0 10px;
+  }
+
+
+  /* Main */
+
+  .dashboard-main {
+    width: 100%;
+
+    padding: 20px 15px;
+  }
+
+
+  /* Header */
+
+  .dashboard-header {
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 24px;
+  }
+
+  .dashboard-header p {
+    font-size: 13px;
+  }
+
+
+  /* Welcome */
+
+  .dashboard-welcome {
+    padding: 20px;
+
+    margin-bottom: 20px;
+  }
+
+  .dashboard-welcome h2 {
+    font-size: 20px;
+  }
+
+
+  /* Statistics */
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .stat-card {
+    padding: 18px;
+  }
+
+
+  /* Charts */
+
+  .dashboard-charts {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  .chart-card {
+    padding: 18px;
+  }
+
+  .chart-container {
+    height: 270px;
+  }
+
+}
+
+
+/* ============================= */
+/* Small Mobile */
+/* ============================= */
+
+@media (max-width: 450px) {
+
+  .dashboard-header {
+    flex-direction: column;
+  }
+
+  .profile-area {
+    align-self: flex-end;
+  }
+
+  .sidebar-menu {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dashboard-welcome {
+    padding: 18px;
+  }
+
+  .dashboard-welcome h2 {
+    font-size: 18px;
+  }
+
+  .dashboard-welcome p {
+    font-size: 13px;
+  }
+
+}
+/* ============================= */
+/* FINAL SPACING FIX */
+/* ============================= */
+
+.dashboard-stats {
+  margin-bottom: 50px ;
+}
+
+.dashboard-charts {
+  margin-top: 0 ;
+  padding-top: 0 ;
+}
