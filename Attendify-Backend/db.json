@@ -1,0 +1,74 @@
+{
+  "attendance": [
+    {
+      "studentName": "Rosna",
+      "studentId": "ST001",
+      "course": "MERN STACK",
+      "date": "2025-02-03",
+      "status": "Present",
+      "totalClasses": 20,
+      "present": 18,
+      "absent": 2,
+      "id": "p06Y1dSnhWc"
+    },
+    {
+      "studentName": "Roshin",
+      "studentId": "ST002",
+      "course": "MERN STACK",
+      "date": "2025-02-03",
+      "status": "Present",
+      "totalClasses": 20,
+      "present": 18,
+      "absent": 2,
+      "id": "dJZe7LpQ068"
+    },
+    {
+      "studentName": "sree",
+      "studentId": "ST005",
+      "course": "python",
+      "date": "2026-03-04",
+      "status": "Present",
+      "totalClasses": 30,
+      "present": 16,
+      "absent": 14,
+      "id": "I_9r1Tz1tYI"
+    },
+    {
+      "studentName": "Rosna",
+      "studentId": "ST001",
+      "course": "MEARN STACK",
+      "date": "2025-03-04",
+      "status": "Absent",
+      "totalClasses": 30,
+      "present": 15,
+      "absent": 15,
+      "id": "LGfsggByTCw"
+    },
+    {
+      "studentName": "Salomi",
+      "studentId": "ST006",
+      "course": "PYTHON",
+      "date": "2026-01-01",
+      "status": "Present",
+      "totalClasses": 60,
+      "present": 50,
+      "absent": 10,
+      "id": "YFSgF-iPw00"
+    }
+  ],
+  "users": [
+    {
+      "name": "roshin",
+      "email": "roshin@gmail.com",
+      "password": "456789",
+      "id": "KMdXJN4uaXc"
+    },
+    {
+      "name": "Amrutha",
+      "email": "amrutha@gmail.com",
+      "password": "567890",
+      "id": "kA41Nv5SyKU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
